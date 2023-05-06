@@ -11,6 +11,7 @@ import RxCocoa
 
 class BaseViewModel {
     lazy var disposeBag = DisposeBag()
+    lazy var peopleProvider = MoyaProvider<PeopleService>(plugins: [NetworkLoggerPlugin()])
     
     init(){}
     

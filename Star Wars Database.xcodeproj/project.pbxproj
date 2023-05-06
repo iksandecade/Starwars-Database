@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		699B9A5D2A06104D00848A66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A5C2A06104D00848A66 /* AppDelegate.swift */; };
 		699B9A5F2A06104D00848A66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A5E2A06104D00848A66 /* SceneDelegate.swift */; };
-		699B9A612A06104D00848A66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A602A06104D00848A66 /* ViewController.swift */; };
+		699B9A612A06104D00848A66 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A602A06104D00848A66 /* MainViewController.swift */; };
 		699B9A642A06104D00848A66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 699B9A622A06104D00848A66 /* Main.storyboard */; };
 		699B9A662A06105000848A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 699B9A652A06105000848A66 /* Assets.xcassets */; };
 		699B9A692A06105000848A66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 699B9A672A06105000848A66 /* LaunchScreen.storyboard */; };
@@ -17,6 +17,25 @@
 		699B9A7A2A06128800848A66 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A792A06128800848A66 /* BaseView.swift */; };
 		699B9A7C2A06129300848A66 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A7B2A06129300848A66 /* BaseViewModel.swift */; };
 		699B9A7E2A061B4100848A66 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A7D2A061B4100848A66 /* NetworkHelper.swift */; };
+		699B9A812A061CF700848A66 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A802A061CF700848A66 /* Endpoints.swift */; };
+		699B9A832A061D1A00848A66 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A822A061D1A00848A66 /* Environment.swift */; };
+		699B9A862A061DE200848A66 /* PeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A852A061DE200848A66 /* PeopleService.swift */; };
+		699B9A892A061F8A00848A66 /* PeopleDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A882A061F8A00848A66 /* PeopleDataModel.swift */; };
+		699B9A8B2A06204A00848A66 /* Response+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A8A2A06204A00848A66 /* Response+Util.swift */; };
+		699B9A8D2A0620E800848A66 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A8C2A0620E800848A66 /* BaseResponse.swift */; };
+		699B9A902A0623E000848A66 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A8F2A0623E000848A66 /* PeopleViewModel.swift */; };
+		699B9A932A06240900848A66 /* PeopleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A922A06240900848A66 /* PeopleRepository.swift */; };
+		699B9A952A06249100848A66 /* PeopleListLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A942A06249100848A66 /* PeopleListLoader.swift */; };
+		699B9A972A06328700848A66 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A962A06328700848A66 /* NetworkManager.swift */; };
+		699B9A9A2A06362E00848A66 /* UIView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A992A06362E00848A66 /* UIView+Helper.swift */; };
+		699B9A9C2A06369C00848A66 /* UIStackView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A9B2A06369C00848A66 /* UIStackView+Helper.swift */; };
+		699B9A9E2A06377800848A66 /* UITableView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A9D2A06377800848A66 /* UITableView+Helper.swift */; };
+		699B9AA02A0637E200848A66 /* UIScrollView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A9F2A0637E200848A66 /* UIScrollView+Helper.swift */; };
+		699B9AA42A06383700848A66 /* StarwarsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9AA32A06383700848A66 /* StarwarsTableView.swift */; };
+		699B9AAB2A063B5300848A66 /* ListErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9AAA2A063B5300848A66 /* ListErrorView.swift */; };
+		699B9AAD2A063B6B00848A66 /* ListErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 699B9AAC2A063B6B00848A66 /* ListErrorView.xib */; };
+		699B9AB12A063EAA00848A66 /* MainItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9AAF2A063EAA00848A66 /* MainItemTableViewCell.swift */; };
+		699B9AB22A063EAA00848A66 /* MainItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 699B9AB02A063EAA00848A66 /* MainItemTableViewCell.xib */; };
 		E0EE36431D88C946AA3E91C6 /* Pods_Star_Wars_Database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D062FC481A0DD6B93146B6 /* Pods_Star_Wars_Database.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +45,7 @@
 		699B9A592A06104D00848A66 /* Star Wars Database.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Star Wars Database.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		699B9A5C2A06104D00848A66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		699B9A5E2A06104D00848A66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		699B9A602A06104D00848A66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		699B9A602A06104D00848A66 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		699B9A632A06104D00848A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		699B9A652A06105000848A66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		699B9A682A06105000848A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +54,25 @@
 		699B9A792A06128800848A66 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		699B9A7B2A06129300848A66 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		699B9A7D2A061B4100848A66 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		699B9A802A061CF700848A66 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		699B9A822A061D1A00848A66 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		699B9A852A061DE200848A66 /* PeopleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleService.swift; sourceTree = "<group>"; };
+		699B9A882A061F8A00848A66 /* PeopleDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDataModel.swift; sourceTree = "<group>"; };
+		699B9A8A2A06204A00848A66 /* Response+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+Util.swift"; sourceTree = "<group>"; };
+		699B9A8C2A0620E800848A66 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		699B9A8F2A0623E000848A66 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
+		699B9A922A06240900848A66 /* PeopleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleRepository.swift; sourceTree = "<group>"; };
+		699B9A942A06249100848A66 /* PeopleListLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListLoader.swift; sourceTree = "<group>"; };
+		699B9A962A06328700848A66 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		699B9A992A06362E00848A66 /* UIView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Helper.swift"; sourceTree = "<group>"; };
+		699B9A9B2A06369C00848A66 /* UIStackView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Helper.swift"; sourceTree = "<group>"; };
+		699B9A9D2A06377800848A66 /* UITableView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Helper.swift"; sourceTree = "<group>"; };
+		699B9A9F2A0637E200848A66 /* UIScrollView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Helper.swift"; sourceTree = "<group>"; };
+		699B9AA32A06383700848A66 /* StarwarsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarwarsTableView.swift; sourceTree = "<group>"; };
+		699B9AAA2A063B5300848A66 /* ListErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListErrorView.swift; sourceTree = "<group>"; };
+		699B9AAC2A063B6B00848A66 /* ListErrorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListErrorView.xib; sourceTree = "<group>"; };
+		699B9AAF2A063EAA00848A66 /* MainItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainItemTableViewCell.swift; sourceTree = "<group>"; };
+		699B9AB02A063EAA00848A66 /* MainItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainItemTableViewCell.xib; sourceTree = "<group>"; };
 		F3D062FC481A0DD6B93146B6 /* Pods_Star_Wars_Database.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Star_Wars_Database.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -71,6 +109,8 @@
 		699B9A5B2A06104D00848A66 /* Star Wars Database */ = {
 			isa = PBXGroup;
 			children = (
+				699B9AA12A06381100848A66 /* UI Component */,
+				699B9A872A061F7300848A66 /* Models */,
 				699B9A702A06124C00848A66 /* Base */,
 				699B9A712A06125100848A66 /* Config */,
 				699B9A6A2A06105000848A66 /* Info.plist */,
@@ -89,6 +129,7 @@
 				699B9A772A06127900848A66 /* BaseController.swift */,
 				699B9A792A06128800848A66 /* BaseView.swift */,
 				699B9A7B2A06129300848A66 /* BaseViewModel.swift */,
+				699B9A8C2A0620E800848A66 /* BaseResponse.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -96,6 +137,7 @@
 		699B9A712A06125100848A66 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				699B9A822A061D1A00848A66 /* Environment.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -103,7 +145,11 @@
 		699B9A722A06125600848A66 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				699B9A842A061DA800848A66 /* Services */,
 				699B9A7D2A061B4100848A66 /* NetworkHelper.swift */,
+				699B9A802A061CF700848A66 /* Endpoints.swift */,
+				699B9A8A2A06204A00848A66 /* Response+Util.swift */,
+				699B9A962A06328700848A66 /* NetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -122,6 +168,7 @@
 		699B9A742A06126200848A66 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				699B9A982A06361C00848A66 /* UI Helper */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -129,6 +176,7 @@
 		699B9A752A06126700848A66 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				699B9A8E2A0623CB00848A66 /* People */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -144,10 +192,83 @@
 		699B9A7F2A061C1B00848A66 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				699B9A602A06104D00848A66 /* ViewController.swift */,
+				699B9AAE2A063E7900848A66 /* Components */,
+				699B9A602A06104D00848A66 /* MainViewController.swift */,
 				699B9A622A06104D00848A66 /* Main.storyboard */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		699B9A842A061DA800848A66 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				699B9A852A061DE200848A66 /* PeopleService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		699B9A872A061F7300848A66 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				699B9A882A061F8A00848A66 /* PeopleDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		699B9A8E2A0623CB00848A66 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				699B9A8F2A0623E000848A66 /* PeopleViewModel.swift */,
+				699B9A922A06240900848A66 /* PeopleRepository.swift */,
+				699B9A942A06249100848A66 /* PeopleListLoader.swift */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		699B9A982A06361C00848A66 /* UI Helper */ = {
+			isa = PBXGroup;
+			children = (
+				699B9A992A06362E00848A66 /* UIView+Helper.swift */,
+				699B9A9B2A06369C00848A66 /* UIStackView+Helper.swift */,
+				699B9A9D2A06377800848A66 /* UITableView+Helper.swift */,
+				699B9A9F2A0637E200848A66 /* UIScrollView+Helper.swift */,
+			);
+			path = "UI Helper";
+			sourceTree = "<group>";
+		};
+		699B9AA12A06381100848A66 /* UI Component */ = {
+			isa = PBXGroup;
+			children = (
+				699B9AA52A06387000848A66 /* ListView */,
+				699B9AA22A06382100848A66 /* StarwarsView */,
+			);
+			path = "UI Component";
+			sourceTree = "<group>";
+		};
+		699B9AA22A06382100848A66 /* StarwarsView */ = {
+			isa = PBXGroup;
+			children = (
+				699B9AA32A06383700848A66 /* StarwarsTableView.swift */,
+			);
+			path = StarwarsView;
+			sourceTree = "<group>";
+		};
+		699B9AA52A06387000848A66 /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				699B9AAA2A063B5300848A66 /* ListErrorView.swift */,
+				699B9AAC2A063B6B00848A66 /* ListErrorView.xib */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		699B9AAE2A063E7900848A66 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				699B9AAF2A063EAA00848A66 /* MainItemTableViewCell.swift */,
+				699B9AB02A063EAA00848A66 /* MainItemTableViewCell.xib */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		B8004BD25B0F8C432133619B /* Pods */ = {
@@ -227,8 +348,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				699B9AAD2A063B6B00848A66 /* ListErrorView.xib in Resources */,
 				699B9A692A06105000848A66 /* LaunchScreen.storyboard in Resources */,
 				699B9A662A06105000848A66 /* Assets.xcassets in Resources */,
+				699B9AB22A063EAA00848A66 /* MainItemTableViewCell.xib in Resources */,
 				699B9A642A06104D00848A66 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,12 +406,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				699B9A7E2A061B4100848A66 /* NetworkHelper.swift in Sources */,
-				699B9A612A06104D00848A66 /* ViewController.swift in Sources */,
+				699B9A612A06104D00848A66 /* MainViewController.swift in Sources */,
 				699B9A5D2A06104D00848A66 /* AppDelegate.swift in Sources */,
 				699B9A7A2A06128800848A66 /* BaseView.swift in Sources */,
+				699B9AA42A06383700848A66 /* StarwarsTableView.swift in Sources */,
+				699B9A9A2A06362E00848A66 /* UIView+Helper.swift in Sources */,
+				699B9A892A061F8A00848A66 /* PeopleDataModel.swift in Sources */,
+				699B9A862A061DE200848A66 /* PeopleService.swift in Sources */,
+				699B9A9E2A06377800848A66 /* UITableView+Helper.swift in Sources */,
+				699B9A832A061D1A00848A66 /* Environment.swift in Sources */,
+				699B9A932A06240900848A66 /* PeopleRepository.swift in Sources */,
+				699B9A9C2A06369C00848A66 /* UIStackView+Helper.swift in Sources */,
 				699B9A782A06127900848A66 /* BaseController.swift in Sources */,
+				699B9A952A06249100848A66 /* PeopleListLoader.swift in Sources */,
+				699B9A972A06328700848A66 /* NetworkManager.swift in Sources */,
 				699B9A5F2A06104D00848A66 /* SceneDelegate.swift in Sources */,
+				699B9A812A061CF700848A66 /* Endpoints.swift in Sources */,
+				699B9AA02A0637E200848A66 /* UIScrollView+Helper.swift in Sources */,
+				699B9A8B2A06204A00848A66 /* Response+Util.swift in Sources */,
+				699B9A902A0623E000848A66 /* PeopleViewModel.swift in Sources */,
 				699B9A7C2A06129300848A66 /* BaseViewModel.swift in Sources */,
+				699B9A8D2A0620E800848A66 /* BaseResponse.swift in Sources */,
+				699B9AB12A063EAA00848A66 /* MainItemTableViewCell.swift in Sources */,
+				699B9AAB2A063B5300848A66 /* ListErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

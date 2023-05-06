@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import RxSwift
 
 let connectionNotif = Notification.Name("com.starwars.notification")
 
@@ -15,6 +16,7 @@ class BaseController: UIViewController {
     @IBOutlet var scrollView: UIScrollView?
     
     lazy internal var containerView = UIView()
+    lazy var disposeBag = DisposeBag()
     
     @IBInspectable var containerBackground: UIColor? {
         didSet {

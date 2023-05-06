@@ -8,6 +8,7 @@ target 'Star Wars Database' do
   # Pods for Star Wars Database
   pod 'Kingfisher', '~> 7.0'
   pod 'Moya/RxSwift'
+  pod 'RxGesture'
   pod 'RxReachability'
   pod 'SkeletonView'
   pod 'SnapKit'
