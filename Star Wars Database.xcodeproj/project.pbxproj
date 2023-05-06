@@ -13,6 +13,10 @@
 		699B9A642A06104D00848A66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 699B9A622A06104D00848A66 /* Main.storyboard */; };
 		699B9A662A06105000848A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 699B9A652A06105000848A66 /* Assets.xcassets */; };
 		699B9A692A06105000848A66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 699B9A672A06105000848A66 /* LaunchScreen.storyboard */; };
+		699B9A782A06127900848A66 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A772A06127900848A66 /* BaseController.swift */; };
+		699B9A7A2A06128800848A66 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A792A06128800848A66 /* BaseView.swift */; };
+		699B9A7C2A06129300848A66 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A7B2A06129300848A66 /* BaseViewModel.swift */; };
+		699B9A7E2A061B4100848A66 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699B9A7D2A061B4100848A66 /* NetworkHelper.swift */; };
 		E0EE36431D88C946AA3E91C6 /* Pods_Star_Wars_Database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D062FC481A0DD6B93146B6 /* Pods_Star_Wars_Database.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +31,10 @@
 		699B9A652A06105000848A66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		699B9A682A06105000848A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		699B9A6A2A06105000848A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		699B9A772A06127900848A66 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		699B9A792A06128800848A66 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		699B9A7B2A06129300848A66 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		699B9A7D2A061B4100848A66 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		F3D062FC481A0DD6B93146B6 /* Pods_Star_Wars_Database.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Star_Wars_Database.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -63,15 +71,83 @@
 		699B9A5B2A06104D00848A66 /* Star Wars Database */ = {
 			isa = PBXGroup;
 			children = (
-				699B9A5C2A06104D00848A66 /* AppDelegate.swift */,
-				699B9A5E2A06104D00848A66 /* SceneDelegate.swift */,
-				699B9A602A06104D00848A66 /* ViewController.swift */,
-				699B9A622A06104D00848A66 /* Main.storyboard */,
-				699B9A652A06105000848A66 /* Assets.xcassets */,
-				699B9A672A06105000848A66 /* LaunchScreen.storyboard */,
+				699B9A702A06124C00848A66 /* Base */,
+				699B9A712A06125100848A66 /* Config */,
 				699B9A6A2A06105000848A66 /* Info.plist */,
+				699B9A722A06125600848A66 /* Network */,
+				699B9A732A06125B00848A66 /* Resources */,
+				699B9A742A06126200848A66 /* Utils */,
+				699B9A762A06126B00848A66 /* View */,
+				699B9A752A06126700848A66 /* ViewModels */,
 			);
 			path = "Star Wars Database";
+			sourceTree = "<group>";
+		};
+		699B9A702A06124C00848A66 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				699B9A772A06127900848A66 /* BaseController.swift */,
+				699B9A792A06128800848A66 /* BaseView.swift */,
+				699B9A7B2A06129300848A66 /* BaseViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		699B9A712A06125100848A66 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		699B9A722A06125600848A66 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				699B9A7D2A061B4100848A66 /* NetworkHelper.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		699B9A732A06125B00848A66 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				699B9A5C2A06104D00848A66 /* AppDelegate.swift */,
+				699B9A652A06105000848A66 /* Assets.xcassets */,
+				699B9A672A06105000848A66 /* LaunchScreen.storyboard */,
+				699B9A5E2A06104D00848A66 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		699B9A742A06126200848A66 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		699B9A752A06126700848A66 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		699B9A762A06126B00848A66 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				699B9A7F2A061C1B00848A66 /* Main */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		699B9A7F2A061C1B00848A66 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				699B9A602A06104D00848A66 /* ViewController.swift */,
+				699B9A622A06104D00848A66 /* Main.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		B8004BD25B0F8C432133619B /* Pods */ = {
@@ -80,7 +156,6 @@
 				4C81E743042C60E268D5B9A0 /* Pods-Star Wars Database.debug.xcconfig */,
 				4BC363CF9055C75AFA62126F /* Pods-Star Wars Database.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -103,6 +178,7 @@
 				699B9A552A06104D00848A66 /* Sources */,
 				699B9A562A06104D00848A66 /* Frameworks */,
 				699B9A572A06104D00848A66 /* Resources */,
+				09FE6890098ACE83584F287C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +236,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		09FE6890098ACE83584F287C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Star Wars Database/Pods-Star Wars Database-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Star Wars Database/Pods-Star Wars Database-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Star Wars Database/Pods-Star Wars Database-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C7BE240E27618EA4B3B65194 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,9 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				699B9A7E2A061B4100848A66 /* NetworkHelper.swift in Sources */,
 				699B9A612A06104D00848A66 /* ViewController.swift in Sources */,
 				699B9A5D2A06104D00848A66 /* AppDelegate.swift in Sources */,
+				699B9A7A2A06128800848A66 /* BaseView.swift in Sources */,
+				699B9A782A06127900848A66 /* BaseController.swift in Sources */,
 				699B9A5F2A06104D00848A66 /* SceneDelegate.swift in Sources */,
+				699B9A7C2A06129300848A66 /* BaseViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

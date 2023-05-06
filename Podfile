@@ -6,5 +6,10 @@ target 'Star Wars Database' do
   use_frameworks!
 
   # Pods for Star Wars Database
+  pod 'Kingfisher', '~> 7.0'
+  pod 'Moya/RxSwift'
+  pod 'RxReachability'
+  pod 'SkeletonView'
+  pod 'SnapKit'
 
 end
