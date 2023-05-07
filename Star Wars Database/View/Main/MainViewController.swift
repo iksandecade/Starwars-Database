@@ -10,7 +10,7 @@ import UIKit
 class MainViewController: BaseController {
     @IBOutlet private weak var listTableView: StarwarsTableView!
 
-    private let viewModel = PeopleViewModel()
+    private let viewModel = StarwarsViewModel()
     private var itemsProvider: PeopleListLoader?
 
     override func viewDidLoad() {
@@ -20,13 +20,15 @@ class MainViewController: BaseController {
         subscribePeopleList()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        self.loadData { success in
-            self.refreshData(success: success)
-        }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.isNavigationBarHidden = false
+    }
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         DispatchQueue.main.async {
@@ -60,6 +62,10 @@ class MainViewController: BaseController {
             self.viewModel.listPeopleData = data
             self.refreshData(success: true)
         }).disposed(by: disposeBag)
+        
+        self.loadData { success in
+            self.refreshData(success: success)
+        }
     }
     
     private func loadData(_ handler: ((Bool) -> Void)? = nil) {
@@ -120,6 +126,13 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if listTableView.state == .Populated {
+            let vc = DetailPeopleViewController(peopleDataModel: viewModel.listPeopleData[indexPath.row])
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
 

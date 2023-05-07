@@ -9,4 +9,8 @@ import Foundation
 
 struct Endpoints {
     static let people = "people"
+    static let films = "films"
+    static let species = "species"
+    static let vehicles = "vehicles"
+    static let starships = "starships"
 }

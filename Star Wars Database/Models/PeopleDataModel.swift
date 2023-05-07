@@ -20,7 +20,7 @@ struct ResponsePeopleDataModel: Codable {
     var films: [String]?
     var species: [String]?
     var vehicles: [String]?
-    var startships: [String]?
+    var starships: [String]?
     var created: String?
     var edited: String?
     var url: String?

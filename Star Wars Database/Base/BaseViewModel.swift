@@ -11,9 +11,17 @@ import RxCocoa
 
 class BaseViewModel {
     lazy var disposeBag = DisposeBag()
-    lazy var peopleProvider = MoyaProvider<PeopleService>(plugins: [NetworkLoggerPlugin()])
+    lazy var starwarsProvider = MoyaProvider<StarwarsService>(plugins: [NetworkLoggerPlugin()])
     
     init(){}
+    
+    func checkIsOffline() -> Bool {
+        if !NetworkManager.isOnline() {
+            NotificationCenter.default.post(name: connectionNotif, object: nil)
+            return true
+        }
+        return false
+    }
     
     func checkErrorInternet(error: Error?) -> Error? {
         if let error, (error as NSError).code == 6 {

@@ -33,20 +33,20 @@ extension UIScrollView {
     }
     
     func setEmptyView(title: String?, subtitle: String?, actionTitle: String? = nil, action: (() -> Void)? = nil) {
-//        let ev = UIView.nib(withType: EmptyView.self)
-//        ev.configure(title: title, subtitle: subtitle, actionTitle: actionTitle, action: action)
-//        self.emptyView = ev
+        let ev = UIView.nib(withType: EmptyView.self)
+        ev.configure(title: title, subtitle: subtitle, actionTitle: actionTitle, action: action)
+        self.emptyView = ev
     }
     func setErrorView(reloadAction action: (() -> Void)?) {
-//        let ev = UIView.nib(withType: ListErrorView.self)
-//        ev.configure(reloadAction: action)
-//        self.errorView = ev
+        let ev = UIView.nib(withType: ListErrorView.self)
+        ev.configure(reloadAction: action)
+        self.errorView = ev
     }
     
     func setOfflineView(reloadAction action: (() -> Void)?) {
-//        let ev = UIView.nib(withType: ListErrorView.self)
-//        ev.configure(messages: "No internet connection, tap to try again", reloadAction: action)
-//        self.offlineView = ev
+        let ev = UIView.nib(withType: ListErrorView.self)
+        ev.configure(messages: "No internet connection, tap to try again", reloadAction: action)
+        self.offlineView = ev
     }
     
     func scrollToTop() {

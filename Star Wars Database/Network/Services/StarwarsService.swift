@@ -7,12 +7,15 @@
 
 import Moya
 
-enum PeopleService {
+enum StarwarsService {
     case getPeople(page: Int)
-    case getDetailPeople(id: Int)
+    case getDetailFilm(id: Int)
+    case getDetailSpecies(id: Int)
+    case getDetailVehicle(id: Int)
+    case getDetailStarship(id: Int)
 }
 
-extension PeopleService: TargetType {
+extension StarwarsService: TargetType {
     var baseURL: URL {
         return URL(string: environment.baseURL)!
     }
@@ -21,8 +24,14 @@ extension PeopleService: TargetType {
         switch self {
         case .getPeople:
             return Endpoints.people
-        case .getDetailPeople(let id):
-            return Endpoints.people + "/\(id)"
+        case .getDetailFilm(let id):
+            return Endpoints.films + "/\(id)"
+        case .getDetailSpecies(let id):
+            return Endpoints.species + "/\(id)"
+        case .getDetailVehicle(let id):
+            return Endpoints.vehicles + "/\(id)"
+        case .getDetailStarship(let id):
+            return Endpoints.starships + "/\(id)"
         }
     }
     

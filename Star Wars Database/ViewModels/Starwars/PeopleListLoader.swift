@@ -12,7 +12,7 @@ import Moya
 class PeopleListLoader {
     let items = BehaviorRelay<[ResponsePeopleDataModel]>(value: [])
     
-    lazy var mainProvider = MoyaProvider<PeopleService>(plugins: [NetworkLoggerPlugin()])
+    lazy var mainProvider = MoyaProvider<StarwarsService>(plugins: [NetworkLoggerPlugin()])
     
     var page: Int
     

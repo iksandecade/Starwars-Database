@@ -47,7 +47,6 @@ class BaseController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.isHidden = true
         NotificationCenter.default.addObserver(self, selector: #selector(showOfflineConnection(_:)), name: connectionNotif, object: nil)
     }
     
