@@ -17,9 +17,8 @@ class DPFilmView: BaseView {
     
     private let viewModel = StarwarsViewModel()
     
-    
     var delegate: DPComponentDelegate?
-      
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         

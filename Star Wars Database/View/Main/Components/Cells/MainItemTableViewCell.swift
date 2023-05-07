@@ -22,12 +22,11 @@ class MainItemTableViewCell: UITableViewCell {
             nameLabel.hideSkeleton()
         }
     }
-  
+    
     func setupData(peopleDataModel: ResponsePeopleDataModel?) {
         showSkeleton(isShow: false)
         guard let peopleDataModel else { return }
         
         nameLabel.text = peopleDataModel.name
     }
-    
 }

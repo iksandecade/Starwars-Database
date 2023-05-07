@@ -18,7 +18,7 @@ extension UIView {
     var disposeBag: DisposeBag {
         return properties.disposeBag
     }
-
+    
     @objc func addTapHandler(_ handler: @escaping (() -> Void)) {
         self.rx
             .tapGesture()

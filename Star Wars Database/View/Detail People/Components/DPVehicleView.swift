@@ -9,8 +9,8 @@ import UIKit
 
 class DPVehicleView: BaseView {
     @IBOutlet weak var listCollectionView: StarwarsCollectionView!
-    
     @IBOutlet weak var noDataLabel: UILabel!
+    
     private let viewModel = StarwarsViewModel()
     
     var delegate: DPComponentDelegate?

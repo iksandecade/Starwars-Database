@@ -9,10 +9,10 @@ import UIKit
 
 class MainViewController: BaseController {
     @IBOutlet private weak var listTableView: StarwarsTableView!
-
+    
     private let viewModel = StarwarsViewModel()
     private var itemsProvider: PeopleListLoader?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -55,7 +55,7 @@ class MainViewController: BaseController {
         }
         listTableView.addRefreshControl(in: self)
     }
-
+    
     private func subscribePeopleList() {
         itemsProvider = PeopleListLoader()
         itemsProvider?.items.subscribe(onNext: { data in
@@ -94,16 +94,12 @@ class MainViewController: BaseController {
         listTableView.setState(state)
         listTableView.reloadData()
     }
-
+    
 }
 
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if listTableView.state == .Loading {
-            return 3
-        } else {
-            return viewModel.listPeopleData.count
-        }
+        return listTableView.state == .Loading ? 10 : viewModel.listPeopleData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -115,14 +111,14 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             cell.showSkeleton(isShow: true)
         } else {
             cell.setupData(peopleDataModel: viewModel.listPeopleData[indexPath.row])
-        }
-        
-        if indexPath.item == viewModel.listPeopleData.count - 2 {
-            self.itemsProvider?.loadMore({ error in
-                if let error {
-                    self.showAlert(title: nil, message: error.localizedDescription)
-                }
-            })
+            
+            if indexPath.item == viewModel.listPeopleData.count - 2 {
+                self.itemsProvider?.loadMore({ error in
+                    if let error {
+                        self.showAlert(title: nil, message: error.localizedDescription)
+                    }
+                })
+            }
         }
         
         return cell

@@ -46,7 +46,7 @@ class PeopleListLoader {
                 completion?(error)
             }.disposed(by: disposeBag)
     }
-     
+    
     func loadMore(_ completion: ((Error?) -> Void)? = nil) {
         guard !isLoading else { return }
         guard hasMore else { return }
